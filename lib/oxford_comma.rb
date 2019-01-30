@@ -6,7 +6,8 @@ def oxford_comma(array)
   elsif array.size == 1 
     "#{array[0]} and #{last_word}"
   else 
-    array.join(", ") += ", and #{last_word}"
+    message = array.join(", ") 
+    message << ", and #{last_word}"
   end 
       
 end
